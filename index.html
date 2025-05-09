@@ -8,29 +8,34 @@
         body {
             font-family: sans-serif;
             line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
+            margin: 0; /* Odebráno původní margin: 20px; */
             color: #333;
+            /* Nastavení obrázku na pozadí */
+            background-image: url("/medvidek.jpg");
+            background-size: cover; /* Obrázek pokryje celou plochu */
+            background-repeat: no-repeat; /* Obrázek se nebude opakovat */
+            background-position: center center; /* Obrázek bude vycentrován */
+            background-attachment: fixed; /* Pozadí zůstane na místě při skrolování */
+            padding: 20px; /* Přidáno odsazení, aby obsah nebyl nalepený na okraje */
         }
         .container {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.9); /* Mírně průhledné bílé pozadí pro lepší čitelnost */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px; /* Omezení maximální šířky pro lepší čitelnost na velkých obrazovkách */
+            margin: 0 auto; /* Vycentrování kontejneru */
         }
         h1, h2 {
             color: #8B4513; /* Hnědá barva inspirovaná medem */
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            display: block;
-            margin: 0 auto 20px;
+            text-align: center; /* Vycentrování nadpisů */
         }
         .highlight {
             color: #D2691E; /* Oranžovo-hnědá, barva medu */
             font-weight: bold;
+        }
+        ul {
+            padding-left: 20px;
         }
         footer {
             text-align: center;
@@ -48,8 +53,6 @@
 
         <section id="o-postave">
             <h2>O Postavě</h2>
-            <img src="/medvidek.jpg" alt="Medvídek Pú" style="max-width: 500px;">
-
             <p>
                 Medvídek Pú (v originále Winnie-the-Pooh) je antropomorfní medvídek, který je hlavní postavou dětských knih anglického spisovatele <span class="highlight">A. A. Milneho</span>.
                 Je známý svou láskou k <span class="highlight">medu</span>, svou dobrosrdečností, ale také svou občasnou naivitou a zapomnětlivostí.
@@ -94,7 +97,7 @@
         </section>
 
         <footer>
-            <p>Stránka vygenerovaná pomocí gemini.</p>
+            <p>Stránka vygenerovaná AI. Informace slouží pro obecný přehled.</p>
         </footer>
     </div>
 </body>
