@@ -18,58 +18,84 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #d2691e; /* Hnědá barva připomínající med */
-            text-align: center;
+        h1, h2 {
+            color: #8B4513; /* Hnědá barva inspirovaná medem */
         }
         img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            display: block;
+            margin: 0 auto 20px;
         }
-        p {
-            text-align: justify;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .highlight {
+            color: #D2691E; /* Oranžovo-hnědá, barva medu */
+            font-weight: bold;
         }
         footer {
             text-align: center;
             margin-top: 20px;
             font-size: 0.9em;
-            color: #777;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Medvídek Pú</h1>
+        <header>
+            <h1>Medvídek Pú</h1>
+        </header>
 
-        <p>
-            Medvídek Pú je milovaná pohádková postava vytvořená anglickým spisovatelem A. A. Milnem.
-            Poprvé se objevil v knize v roce 1926. Pú je dobromyslný, trochu naivní medvídek, který nadevše miluje med
-            a své přátele – Prasátko, Ijáčka, Tygra, Klokánka, Sovu a samozřejmě Kryštůfka Robina.
-            Jeho příběhy ze Stokorcového lesa jsou plné laskavosti, přátelství a jednoduchých životních mouder.
-        </p>
+        <section id="o-postave">
+            <h2>O Postavě</h2>
+            <img src="/medvidek.jpg" alt="Medvídek Pú" style="max-width: 300px;">
 
-        <img src="/medvidek.jpg" alt="Obrázek Medvídka Pú">
+            <p>
+                Medvídek Pú (v originále Winnie-the-Pooh) je antropomorfní medvídek, který je hlavní postavou dětských knih anglického spisovatele <span class="highlight">A. A. Milneho</span>.
+                Je známý svou láskou k <span class="highlight">medu</span>, svou dobrosrdečností, ale také svou občasnou naivitou a zapomnětlivostí.
+                Pú je popisován jako "Medvěd Velmi Malého Rozumu", což však neznamená, že by byl hloupý, spíše má jednoduchý a přímočarý pohled na svět.
+            </p>
+        </section>
 
-        <p>
-            Pokud se chcete o Medvídkovi Pú dozvědět více, můžete navštívit například stránku na
-            <a href="https://cs.wikipedia.org/wiki/Medv%C3%ADdek_P%C3%BA" target="_blank">Wikipedii</a>.
-        </p>
+        <section id="pribeh">
+            <h2>Příběhy a Přátelé</h2>
+            <p>
+                Příběhy Medvídka Pú se odehrávají ve <span class="highlight">Stokorcovém lese</span> (Hundred Acre Wood). Zde žije spolu se svými přáteli, kterými jsou:
+            </p>
+            <ul>
+                <li><strong>Kryštůfek Robin:</strong> Chlapec, kterému zvířátka patří a který s nimi prožívá dobrodružství.</li>
+                <li><strong>Prasátko:</strong> Malé, bojácné, ale věrné prasátko.</li>
+                <li><strong>Tygr:</strong> Energický a skákající tygr, který má rád zábavu.</li>
+                <li><strong>Ijáček:</strong> Starý, pesimistický osel, který často ztrácí svůj ocas.</li>
+                <li><strong>Králíček:</strong> Praktický a organizovaný králík, který má rád svou zahrádku.</li>
+                <li><strong>Sova:</strong> Moudrá sova, i když její moudrost je někdy sporná.</li>
+                <li><strong>Klokanice Kanga a klokánek Roo:</strong> Mateřská klokanice a její zvědavý syn.</li>
+            </ul>
+            <p>
+                První kniha s názvem "Medvídek Pú" vyšla v roce <span class="highlight">1926</span> a následovala kniha "Púovo zátiší" (The House at Pooh Corner) v roce 1928. Ilustrace k původním knihám vytvořil <span class="highlight">E. H. Shepard</span>.
+            </p>
+        </section>
+
+        <section id="adaptace">
+            <h2>Adaptace</h2>
+            <p>
+                Příběhy Medvídka Pú se staly nesmírně populární po celém světě a dočkaly se mnoha adaptací. Nejznámější jsou animované filmy a seriály od společnosti <span class="highlight">Disney</span>, která získala práva na postavu.
+                Disneyho verze Medvídka Pú se vizuálně mírně liší od původních Shepardových ilustrací (například Pú nosí červené tričko).
+            </p>
+        </section>
+
+        <section id="zajimavosti">
+            <h2>Zajímavosti</h2>
+            <ul>
+                <li>Jméno "Winnie" dostal medvídek podle skutečné medvědice jménem Winnipeg, kterou A. A. Milne a jeho syn Kryštůfek Robin často navštěvovali v londýnské zoo.</li>
+                <li>"Pooh" bylo původně jméno labutě.</li>
+                <li>Medvídek Pú je jednou z nejikoničtějších a nejoblíbenějších dětských postav na světě.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Stránka vygenerovaná AI. Informace slouží pro obecný přehled.</p>
+        </footer>
     </div>
-    <footer>
-        <p>Vytvořeno s pomocí gemini.</p>
-    </footer>
 </body>
 </html>
